@@ -1,10 +1,3 @@
----
-fname: Sandip Patel
-image: Markdown Image for Certification Exam
-password: It must be alphanumeric..
----
-![Company Logo](images/Conga.png)
-
 # Choose an Authentication Protocol
 
 Your connections between Salesforce and external systems use an authentication protocol to confirm secure communication between the two systems.
@@ -13,16 +6,10 @@ When selecting which authentication protocol to use with your external system, k
 
 For more information: contact {{page.fname}} or {{site.author}}
 
-{% for item in site.data.data_file %}
-- **{{item.Release}}, {{ item.Description }}, {{ item.Date}}**
-{% endfor %}
-
 ## Password
 
 A static username and password are used to directly authenticate into the external system.
 -  If you’re using the per-user identity type, each user accessing the external system manages their own username and password.
-
-For Example: {{page.password}}
 
 ## AWS Signature Version 4
 
