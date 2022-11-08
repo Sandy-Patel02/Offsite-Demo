@@ -13,10 +13,6 @@ When selecting which authentication protocol to use with your external system, k
 
 For more information: contact {{page.fname}} or {{site.author}}
 
-{% for item in site.data.data_file %}
-- **{{item.Release}}, {{ item.Description }}, {{ item.Date}}**
-{% endfor %}
-
 ## Password
 
 A static username and password are used to directly authenticate into the external system.
