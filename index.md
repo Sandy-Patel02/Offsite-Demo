@@ -22,11 +22,6 @@ A protocol to authenticate callouts to resources in Amazon Web Services over HTT
 -  You can use it as an authentication protocol for Named Credentials
 -  You can’t use it as an authentication protocol for external data sources.
 
-|  Release  | Description   |
-| --------- | -----------   |
-| May '22   | New Topic     |
-| April '22 | Modified Topic|
-
 >  **Note**
 >  If transmitting sensitive information such as healthcare data or credit card data, authenticated Named Credentials are required. 
 Salesforce recommends that Customers consider providing their own Certificates for extra security of sensitive data transmissions.
@@ -74,4 +69,3 @@ In Dev Hub, ActiveScratchOrgs represent the scratch orgs that are currently in u
 To view more details about a request, click the link in the Number column. The details of a scratch org request include whether it's active, expired, or deleted.
 1.  To delete the request that was used to create a scratch org, choose **Delete** from the dropdown.
 Deleting the request (ScratchOrgInfo) also deletes the active scratch org.
-
