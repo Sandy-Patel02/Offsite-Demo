@@ -1,6 +1,10 @@
 ---
 fname: Sandip Patel
+image: Markdown Image for Certification Exam
+password: It must be alphanumeric..
+layout: demo_template
 ---
+![Company Logo](images/Conga.png)
 
 # Choose an Authentication Protocol
 
@@ -22,10 +26,6 @@ A protocol to authenticate callouts to resources in Amazon Web Services over HTT
 -  You can use it as an authentication protocol for Named Credentials
 -  You can’t use it as an authentication protocol for external data sources.
 
->  **Note**
->  If transmitting sensitive information such as healthcare data or credit card data, authenticated Named Credentials are required. 
-Salesforce recommends that Customers consider providing their own Certificates for extra security of sensitive data transmissions.
-
 See Also [Manage Scratch Orgs from Dev Hub](#manage-scratch-orgs-from-dev-hub)
 
 # Named Credentials
@@ -38,11 +38,6 @@ your code handles authentication, which can be less secure and especially compli
 Salesforce manages all authentication for callouts that specify a named credential as the callout endpoint so that you don’t have to. 
 You can also skip remote site settings, which are otherwise required for callouts to external sites, for the site defined in the named credential.
 
->  **Important**
->  All credentials stored within the NamedCredential, ExternalDataSource, and ExternalDataUserAuth entities are encrypted under a framework that is 
-consistent with other encryption frameworks on the platform. 
->  Salesforce encrypts your credentials by auto-creating org-specific keys. Credentials encrypted using the previous encryption scheme were migrated to the new framework.
-
 Named credentials are supported in these types of callout definitions:
 -  Apex callouts
 -  External data sources of these types:
@@ -50,10 +45,6 @@ Named credentials are supported in these types of callout definitions:
    -  Salesforce Connect: OData 4.0
    -  Salesforce Connect: Custom (developed with the Apex Connector Framework)
 -  External Services
-
-Named Credentials also include an OutboundNetworkConnection field that you can use to route callouts through a private connection. 
-By separating the endpoint URL and authentication from the callout definition, named credentials make callouts easier to maintain. For example, 
-if an endpoint URL changes, you update only the named credential. All callouts that reference the named credential simply continue to work.
 
 ## Manage Scratch Orgs from Dev Hub
 
